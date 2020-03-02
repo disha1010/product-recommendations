@@ -19,8 +19,8 @@
           </div>
         </div>
         <ul class="navbar-nav">
-          <li class="nav-item"><a href="#" class="nav-link"></a></li>
-          <li class="nav-item"><a href="#" class="nav-link"></a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-cog"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-window-maximize"></i></a></li>
           <li class="nav-item"><a href="#" class="nav-link">Analistics</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Audience</a></li>
@@ -32,7 +32,7 @@
           <li class="nav-item"><a href="#" class="nav-link">Rec one</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#36; 999</a>
+            <a class="nav-link dropdown-toggle btn btn-success" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#36; 999</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -44,11 +44,11 @@
     </nav>
   </header>
 
-  <main class="main">
-    <div>
+  <main class="content">
+    <section class="content__header d-flex justify-content-between align-items-center">
       <div>
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
+          <ol class="breadcrumb bg-transparent m-0 p-0">
             <li class="breadcrumb-item"><a href="#">Your Store</a></li>
             <li class="breadcrumb-item active" aria-current="page">Product Recommendations</li>
           </ol>
@@ -56,8 +56,11 @@
         <h1 class="h1">Product recommendations blocks</h1>
       </div>
 
-      <a href="#" class="btn btn-success">Add new block</a>
-    </div>
+      <a href="#" class="btn btn-success">
+        <i class="fas fa-plus"></i>
+        Add new block
+      </a>
+    </section>
 
     <table class="table table-hover">
       <thead class="thead-light">
@@ -71,25 +74,32 @@
       </thead>
       <tbody>
         <tr>
-          <td>@mdo</td>
-          <td>@mdo</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>@mdo</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>@mdo</td>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>@mdo</td>
+          <td>
+            <span class="td-title">Popular product</span>
+            <span class="td-subtitle">Usually set on top of home page</span>
+          </td>
+          <td>
+            <div class="histogram"></div>
+            <div class="desc">
+              <i class="far fa-check-circle"></i>
+              <!-- <i class="fas fa-info-circle"></i> 
+              <i class="fas fa-exclamation-triangle"></i>-->
+              <div>
+                <span class="td-title"></span>
+                <span class="td-subtitle"></span>
+              </div>
+            </div>
+          </td>
+          <td>0.45</td>
+          <td></td>
+          <td>
+            <ul class="nav">
+              <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-cog"></i></a></li>
+              <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-play-circle"></i></a></li>
+              <!-- <i class="far fa-pause-circle"></i> -->
+              <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-trash-alt"></i></a></li>
+            </ul>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -105,6 +115,7 @@
       </ul>
       <ul class="nav">
         <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
         <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a></li>
       </ul>
     </section>
