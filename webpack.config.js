@@ -11,6 +11,9 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  externals: {
+    moment: 'moment'
+  },
   module: {
     rules: [
       {
@@ -56,11 +59,18 @@ module.exports = {
             }
           }
         ] 
+      },
+      {
+        test: /\.(jpe?g|png|gif|ico)$/i,
+        loader: 'file-loader?name=[name].[ext]'
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin('style.css'),
-    new HtmlWebpackPlugin({template: './src/index.html'}),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      favicon: './src/favicon.ico'
+    }),
   ],
 };
