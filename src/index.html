@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body>
-  <header class="header bg-dark">
-    <nav class="navbar navbar-expand-lg">
+<body class="d-flex flex-column justify-content-between">
+  <header class="header bg-dark mb-20">
+    <nav class="navbar navbar-expand-lg py-1">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="dropdown mr-auto">
-          <a class="navbar-brand nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store Name</a>
+          <a class="nav-link dropdown-toggle active p-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store Name</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
@@ -25,32 +25,33 @@
           <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Audience</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Product Recommendations</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Search</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Search<sup class="text-success">new</sup></a></li>
           <li class="nav-item"><a href="#" class="nav-link">Emails</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Push</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Rec one</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase">Rec one <span class="badge badge-pill badge-secondary align-middle">1</span></a></li>
           <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-success" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#36; 999</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
         </ul>
+
+        <div class="dropdown ml-2">
+          <a class="dropdown-toggle btn btn-success btn-sm" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#36; 999</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
 
-  <main class="content">
-    <section class="content__header d-flex justify-content-between align-items-center">
+  <main class="content container-fluid py-3">
+    <section class="d-flex justify-content-between align-items-center">
       <div>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent m-0 p-0">
-            <li class="breadcrumb-item"><a href="#">Your Store</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Product Recommendations</li>
+            <li class="breadcrumb-item small"><a href="#">Your Store</a></li>
+            <li class="breadcrumb-item small active" aria-current="page">Product Recommendations</li>
           </ol>
         </nav>
         <h1 class="h1">Product recommendations blocks</h1>
@@ -62,51 +63,57 @@
       </a>
     </section>
 
-    <table class="table table-hover">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">Head</th>
-          <th scope="col">Status (30 minutes)</th>
-          <th scope="col">CTR (%)</th>
-          <th scope="col">Block's filing rate</th>
-          <th scope="col">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <span class="td-title">Popular product</span>
-            <span class="td-subtitle">Usually set on top of home page</span>
-          </td>
-          <td>
-            <div class="histogram"></div>
-            <div class="desc">
-              <i class="far fa-check-circle"></i>
-              <!-- <i class="fas fa-info-circle"></i> 
-              <i class="fas fa-exclamation-triangle"></i>-->
-              <div>
-                <span class="td-title"></span>
-                <span class="td-subtitle"></span>
+    <section>
+      <table class="table table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col" style="width: 30%;">Head</th>
+            <th scope="col" style="width: 35%;">Status (30 minutes)</th>
+            <th scope="col">CTR (%)</th>
+            <th scope="col">Block's filing rate</th>
+            <th scope="col" style="width: 8rem;">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">Popular product</div>
+              <div class="small text-secondary">Usually set on top of home page</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="far fa-check-circle text-success mr-2"></i>
+                  <!-- <i class="fas fa-info-circle text-secondary"></i> 
+                  <i class="fas fa-exclamation-triangle text-error"></i>-->
+                  <div>
+                    <div class="font-weight-bold text-success">In use</div>
+                    <div class="small text-secondary">Last request: <span class="font-weight-bold">2 minute ago</span></div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </td>
-          <td>0.45</td>
-          <td></td>
-          <td>
-            <ul class="nav">
-              <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-cog"></i></a></li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-play-circle"></i></a></li>
-              <!-- <i class="far fa-pause-circle"></i> -->
-              <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-trash-alt"></i></a></li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </td>
+            <td class="text-right align-middle">0.45</td>
+            <td class="align-middle">
+              <div class="histogram"></div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="far fa-play-circle"></i></a></li>
+                <!-- <i class="far fa-pause-circle"></i> -->
+                <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </main>
   
-  <footer class="footer">
-    <section class="footer--top">
+  <footer class="footer border-top mt-auto">
+    <section class="footer--top d-flex justify-content-between align-items-center">
       <ul class="nav">
         <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Docs</a></li>
@@ -121,10 +128,10 @@
     </section>
     <section class="footer--bottom">
       <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link">Cookie Policy</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Personal Data Policy</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Terms and Conditions</a></li>
+        <li class="nav-item small"><a href="#" class="nav-link">Cookie Policy</a></li>
+        <li class="nav-item small"><a href="#" class="nav-link">Personal Data Policy</a></li>
+        <li class="nav-item small"><a href="#" class="nav-link">Privacy Policy</a></li>
+        <li class="nav-item small"><a href="#" class="nav-link">Terms and Conditions</a></li>
       </ul>
     </section>
   </footer>

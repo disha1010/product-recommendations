@@ -1,0 +1,63 @@
+$theme-colors: (
+  "success": #00C551,
+  "danger": #FD0031
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  height: 100vh;
+}
+
+.content {
+  overflow: auto;
+}
+.h1 {
+  font-size: $font-size-base * 2;
+  margin-bottom: 1.5rem;
+}
+
+.header {
+  .nav-link {
+    color: #6c757d;
+    padding-top: 0;
+    padding-bottom: 0;
+    &.active,
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.breadcrumb {
+  a {
+    color: $success;
+  }
+}
+
+.table {
+  thead th {
+    border: 0;
+    text-transform: uppercase;
+  }
+  tr td {
+    border-top: 0;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .desc i {
+    font-size: 2.4rem;
+  }
+}
+
+.histogram {
+  width: 110px;
+  height: 40px;
+  margin-right: 1rem;
+  background-color: darkgray;
+}
+
+.footer {
+  .nav-link {
+    color: #6c757d
+  }
+}
