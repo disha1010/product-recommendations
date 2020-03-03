@@ -1,2 +1,18 @@
-@import "custom";
+$green: #00C551;
+$red: #FD0031;
+$gray-500: #adb5bd;
+
+$secondary:     $gray-500;
+$success:       $green;
+$danger:        $red;
+
+$theme-colors: (
+  "success": $success,
+  "danger": $danger,
+  "secondary": $secondary,
+);
+
+@import "~bootstrap/scss/bootstrap";
 @import "icon-font";
+@import "rate";
+@import "custom";
