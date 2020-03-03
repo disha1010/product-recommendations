@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body class="d-flex flex-column justify-content-between">
+  <header class="header bg-dark mb-20">
+    <nav class="navbar navbar-expand-lg py-1">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="dropdown mr-auto">
+          <a class="nav-link dropdown-toggle active p-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store Name</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-cog"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="far fa-window-maximize"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Analistics</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Audience</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Product Recommendations</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Search<sup class="text-success">new</sup></a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Emails</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Push</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase">Rec one <span class="badge badge-pill badge-secondary align-middle text-white">1</span></a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+        </ul>
+
+        <div class="dropdown ml-2">
+          <a class="dropdown-toggle btn btn-success btn-sm" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#36; 999</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content container-fluid py-3">
+    <section class="d-flex justify-content-between align-items-center">
+      <div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent m-0 p-0">
+            <li class="breadcrumb-item small"><a href="#">Your Store</a></li>
+            <li class="breadcrumb-item small active" aria-current="page">Product Recommendations</li>
+          </ol>
+        </nav>
+        <h1 class="h1 mb-4">Product recommendations blocks</h1>
+      </div>
+
+      <a href="#" class="btn btn-success">
+        <i class="fas fa-plus mr-2"></i>
+        Add new block
+      </a>
+    </section>
+
+    <section>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col" class="border-right border-white" style="width: 30%;">Head</th>
+            <th scope="col" class="border-right border-white" style="width: 35%;">Status (30 minutes)</th>
+            <th scope="col" class="border-right border-white">CTR (%)</th>
+            <th scope="col" class="border-right border-white">Block's filing rate</th>
+            <th scope="col" style="width: 8rem;">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">Popular products</div>
+              <div class="small text-black-50">Usually set on top of home page</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram mr-3"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="far fa-check-circle text-success mr-2"></i>
+                  <div>
+                    <div class="font-weight-bold text-success">In use</div>
+                    <div class="small text-black-50">Last request: <span class="font-weight-bold">2 minute ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="text-right align-middle">0.45</td>
+            <td class="align-middle">
+              <div class="bg-light">
+                <div class="rate">
+                  <div class="rate__part rate__part_success"></div>
+                  <div class="rate__part rate__part_yellow"></div>
+                  <div class="rate__part rate__part_orange"></div>
+                  <div class="rate__part rate__part_error"></div>
+                  <div class="rate__part rate__part_default"></div>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="far fa-pause-circle"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">Popular products</div>
+              <div class="small text-black-50">Usually set on category page</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram mr-3"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="fas fa-info-circle text-secondary mr-2"></i>
+                  <div>
+                    <div class="font-weight-bold text-secondary">Not installed</div>
+                    <div class="small text-black-50">Last request: <span class="font-weight-bold">Never</span></div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="text-right align-middle">0</td>
+            <td class="align-middle">
+              <div class="bg-light">
+                <div class="rate">
+                  <div class="rate__part rate__part_default" style="width: 1%"></div>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="far fa-play-circle"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">Similar products</div>
+              <div class="smalltext-black-50">Usually set on product details page</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram mr-3"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="fas fa-exclamation-triangle text-danger mr-2"></i>
+                  <div>
+                    <div class="font-weight-bold text-danger">Error</div>
+                    <div class="smalltext-black-50">Last request: <span class="font-weight-bold text-danger">> 10 minute ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="text-right align-middle">0.25</td>
+            <td class="align-middle">
+              <div class="bg-light">
+                <div class="rate">
+                  <div class="rate__part rate__part_success" style="width: 2%"></div>
+                  <div class="rate__part rate__part_yellow" style="width: 3%"></div>
+                  <div class="rate__part rate__part_orange" style="width: 5%"></div>
+                  <div class="rate__part rate__part_error" style="width: 10%"></div>
+                  <div class="rate__part rate__part_default" style="width: 80%"></div>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="far fa-pause-circle"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">See also</div>
+              <div class="small text-black-50">Usually set shopping cart page (pre-checkout or during checkout)</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram mr-3"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="far fa-check-circle text-success mr-2"></i>
+                  <div>
+                    <div class="font-weight-bold text-success">A/B-testing</div>
+                    <div class="small text-black-50">Last request: <span class="font-weight-bold">2 minute ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="text-right align-middle">0.45</td>
+            <td class="align-middle">
+              <div class="bg-light">
+                <div class="rate">
+                  <div class="rate__part rate__part_success"></div>
+                  <div class="rate__part rate__part_yellow"></div>
+                  <div class="rate__part rate__part_orange"></div>
+                  <div class="rate__part rate__part_error"></div>
+                  <div class="rate__part rate__part_default"></div>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="far fa-pause-circle"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">Regular purchase</div>
+              <div class="small text-black-50">Usually set on any page</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram mr-3"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="fas fa-info-circle text-secondary mr-2"></i>
+                  <div>
+                    <div class="font-weight-bold text-secondary">Not installed</div>
+                    <div class="small text-black-50">Last request: <span class="font-weight-bold">Never</span></div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="text-right align-middle">0</td>
+            <td class="align-middle">
+              <div class="bg-light">
+                <div class="rate">
+                  <div class="rate__part rate__part_default" style="width: 1%"></div>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="far fa-play-circle"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">You may be interested in these product</div>
+              <div class="small text-black-50">Usually set on any page</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram mr-3"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="far fa-check-circle text-success mr-2"></i>
+                  <div>
+                    <div class="font-weight-bold text-success">In use</div>
+                    <div class="small text-black-50">Last request: <span class="font-weight-bold">2 minute ago</span></div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="text-right align-middle">0.15</td>
+            <td class="align-middle">
+              <div class="bg-light">
+                <div class="rate">
+                  <div class="rate__part rate__part_success"></div>
+                  <div class="rate__part rate__part_yellow"></div>
+                  <div class="rate__part rate__part_orange"></div>
+                  <div class="rate__part rate__part_error"></div>
+                  <div class="rate__part rate__part_default"></div>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="far fa-pause-circle"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">People, who searched this, bought these products</div>
+              <div class="small text-black-50">Usually set on search result page</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram mr-3"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="fas fa-info-circle text-secondary mr-2"></i>
+                  <div>
+                    <div class="font-weight-bold text-secondary">Not installed</div>
+                    <div class="small text-black-50">Last request: <span class="font-weight-bold">Never</span></div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="text-right align-middle">0</td>
+            <td class="align-middle">
+              <div class="bg-light">
+                <div class="rate">
+                  <div class="rate__part rate__part_default" style="width: 1%"></div>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="far fa-play-circle"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">Recently viewed</div>
+              <div class="small text-black-50">Usually set on any page</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram mr-3"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="fas fa-info-circle text-secondary mr-2"></i>
+                  <div>
+                    <div class="font-weight-bold text-secondary">Not installed</div>
+                    <div class="small text-black-50">Last request: <span class="font-weight-bold">Never</span></div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="text-right align-middle">0</td>
+            <td class="align-middle">
+              <div class="bg-light">
+                <div class="rate">
+                  <div class="rate__part rate__part_default" style="width: 1%"></div>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="far fa-play-circle"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="align-middle">
+              <div class="font-weight-bold">Trending products</div>
+              <div class="small text-black-50">Usually set on home page with "popular" block</div>
+            </td>
+            <td class="align-middle">
+              <div class="d-flex align-items-center">
+                <div class="histogram mr-3"></div>
+                <div class="desc d-flex align-items-center">
+                  <i class="fas fa-info-circle text-secondary mr-2"></i>
+                  <div>
+                    <div class="font-weight-bold text-secondary">Not installed</div>
+                    <div class="small text-black-50">Last request: <span class="font-weight-bold">Never</span></div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="text-right align-middle">0</td>
+            <td class="align-middle">
+              <div class="bg-light">
+                <div class="rate">
+                  <div class="rate__part rate__part_default" style="width: 1%"></div>
+                </div>
+              </div>
+            </td>
+            <td class="align-middle">
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="fas fa-cog"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0 mr-3"><i class="far fa-play-circle"></i></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary p-0"><i class="far fa-trash-alt"></i></a></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  
+  <footer class="footer mt-auto pb-4">
+    <section class="d-flex justify-content-between align-items-center border-top">
+      <ul class="nav">
+        <li class="nav-item font-weight-bold"><a href="#" class="nav-link">Blog</a></li>
+        <li class="nav-item font-weight-bold"><a href="#" class="nav-link">Docs</a></li>
+        <li class="nav-item font-weight-bold"><a href="#" class="nav-link">FAQ</a></li>
+        <li class="nav-item font-weight-bold"><a href="#" class="nav-link">Contact Us</a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link p-0 mr-3"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0 mr-3"><i class="fab fa-twitter"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0 mr-3"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </section>
+    <section>
+      <ul class="nav">
+        <li class="nav-item small"><a href="#" class="nav-link">Cookie Policy</a></li>
+        <li class="nav-item small"><a href="#" class="nav-link">Personal Data Policy</a></li>
+        <li class="nav-item small"><a href="#" class="nav-link">Privacy Policy</a></li>
+        <li class="nav-item small"><a href="#" class="nav-link">Terms and Conditions</a></li>
+      </ul>
+    </section>
+  </footer>
+<script type="text/javascript" src="main.js"></script></body>
+</html>
