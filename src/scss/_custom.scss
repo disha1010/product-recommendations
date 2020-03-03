@@ -38,9 +38,6 @@ body {
   .nav i{
     font-size: 1.2rem;
   }
-  i {
-    color: $gray-500;
-  }
 }
 
 .histogram {
@@ -49,6 +46,15 @@ body {
   background-color: darkgray;
 }
 
+.footer_top {
+  .nav-link {
+    color: $gray-600;
+  }
+}
+
 .nav-link {
   color: $gray-500;
+  &:hover {
+    color: $gray-700;
+  }
 }
