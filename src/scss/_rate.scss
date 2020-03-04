@@ -1,23 +1,10 @@
 $hoursInDay: 24;
+$green: #01E076;
+$yellow: #FED219;
+$orange: #FBA443;
+$red: #FE7B83;
+$gray: #CDD4DC;
 
-.timeline {
-  font-size: em(12);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: -5px;
-  bottom: 100%;
-  display: block;
-}
-
-.timeline li {
-  float: left;
-  text-align: left;
-  &:last-of-type{
-    width: initial !important;
-  }
-}
 
 .rate {
   width: 100%;
@@ -35,7 +22,7 @@ $hoursInDay: 24;
 }
 
 .rate__part_success {
-  @include rate__part($success, 16);
+  @include rate__part($green, 16);
 }
 
 .rate__part_yellow {
@@ -47,9 +34,9 @@ $hoursInDay: 24;
 }
 
 .rate__part_error {
-  @include rate__part($danger, 1.1);
+  @include rate__part($red, 1.1);
 }
 
 .rate__part_default {
-  @include rate__part($gray-500, 0.4);
+  @include rate__part($gray, 0.4);
 }
