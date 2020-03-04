@@ -15,14 +15,17 @@ module.exports = {
     moment: 'moment'
   },
   module: {
-    rules: [
-      {
-        test: /\.(scss)$/,
-        use: [{
-          loader: 'style-loader',
-        }, {
-          loader: 'css-loader',
-        }, {
+    rules: [{
+      test: /\.(sa|sc|c)ss$/,
+      use: [
+        {
+          loader: MiniCssExtractPlugin.loader,
+          options: {
+            hmr: process.env.NODE_ENV === 'development',
+          },
+        },
+        'css-loader',
+        {
           loader: 'postcss-loader', 
           options: {
             plugins: function () {
@@ -31,10 +34,10 @@ module.exports = {
               ];
             }
           }
-        }, {
-          loader: 'sass-loader'
-        }]
-      },
+        },
+        'sass-loader',
+      ],
+    },
       { 
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
         use: [
